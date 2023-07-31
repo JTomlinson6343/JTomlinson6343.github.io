@@ -132,11 +132,12 @@ Delete it completely to stop fading
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:relative; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
 #mainav{border:solid; border-width:1px 0;}
 #mainav ul{text-transform:uppercase; text-align:center;}
+#mainav ul ul{z-index:9999; position:absolute; width:160px; text-transform:none; text-align:left;}
 #mainav ul ul ul{left:160px; top:0;}
 #mainav li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
 #mainav li:last-child{margin-right:0;}
