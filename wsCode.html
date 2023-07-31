@@ -8,7 +8,7 @@ Licence URI: https://www.os-templates.com/template-terms
 -->
 <html lang="eng">
 <head>
-<title>James Tomlinson Portfolio - Contact</title>
+<title>James Tomlinson Portfolio - Home</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -46,8 +46,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <div class="bgded" style="background-image:url('images/carbon.png');">
   <div id="pageintro" class="hoc clear"> 
     <article>
-      <h3 class="heading">Contact Details</h3>
-      <p>This page contains all the places you can contact me on</p>
+      <h3 class="heading">Wizard Survivors Code Examples</h3>
     </article>
   </div>
 </div>
@@ -55,9 +54,22 @@ Licence URI: https://www.os-templates.com/template-terms
 <div class="wrapper row3">
   <figure class="hoc container clear"> 
 
-      <p> Email: jatommo@gmail.com</p>
-      <p> Mobile: 07419117400</p>
-      <p> LinkedIn: https://www.linkedin.com/in/james-tomlinson-638b6118a/</p>
+      <p>Here is the audio manager.
+		It is a static system that can be called from anywhere using the GetInstance() method.
+		It is used to play sounds and music.
+		It uses virtual audio sources called Voices which are kept track of as voice objects. These voices are stored as structs which have methods that allow the system to figure out the status of each voice.
+		Whenever a new sound is played, the system checks for an available sound and plays the sound on that voice.
+		NOTE: Sony code which is under NDA is redacted</p>
+		<img src="images/playsound.PNG"></img>
+		<img src="images/checkfreevoice.PNG"></img>
+		<img src="images/voice.PNG"></img>
+		<p>I also wrote a custom font system for the game. The font manager has a display text function which converts string characters to UVs on a spritesheet and displays them in sequence on screen.
+			It supports alignment and can be given a lifetime to remove the letters after a set duration. This font system is used for the HUD and the floating damage numbers.
+			Said damage numbers also shrink over time for added visual effect.</p>
+			
+		<p>This code sets the letters stored in a word parent object to the letters specified in the string passed. It then gets the letters it needs from the pool and displays them</p>
+		<img src="images/setword.PNG"></img>
+		<img src="images/getletters.PNG"></img>
 
   </figure>
 </div>
